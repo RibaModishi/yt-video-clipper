@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  output: 'standalone',
   turbopack: {
     rules: {
       "*.css": {
@@ -11,6 +12,13 @@ const nextConfig: NextConfig = {
         as: "*.css",
       },
     },
+  },
+  // Optimize for production
+  poweredByHeader: false,
+  compress: true,
+  // Extended timeout for video processing
+  experimental: {
+    serverMinification: true,
   },
 };
 
