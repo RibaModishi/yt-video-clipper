@@ -74,27 +74,26 @@ npm run dev
 2. **Video Processing**: Uses FFmpeg to extract the specified time segment
 3. **Delivery**: Streams the processed clip directly to your browser for download
 
+## 📱 Deploy to Use from Your iPhone
+
+Want to access this from your phone? **See [DEPLOY.md](./DEPLOY.md) for step-by-step instructions!**
+
+The easiest options:
+- **Railway** - $5/month free credit, best for regular use
+- **Render** - Completely free (app sleeps when inactive)
+
+Both support all the tools needed (yt-dlp, ffmpeg) and will give you a public URL you can access from any device.
+
 ## Production Deployment
 
-To deploy this application:
+The included `Dockerfile` makes deployment easy. Recommended platforms:
 
-1. Build the production version:
-```bash
-npm run build
-```
+1. **Railway** (Recommended) - Auto-detects Dockerfile, free tier available
+2. **Render** - Docker support, generous free tier
+3. **Google Cloud Run** - Pay per use
+4. **AWS ECS** - More advanced setup
 
-2. Start the production server:
-```bash
-npm start
-```
-
-Or deploy to platforms like:
-- Vercel (easiest, free tier available)
-- Railway
-- Render
-- Any Node.js hosting platform
-
-**Note**: Ensure your hosting platform has FFmpeg and Python/yt-dlp available, or install them as part of your build process.
+**Note**: This app requires FFmpeg and yt-dlp, which are automatically installed via the Dockerfile.
 
 ## Tips for Content Creators
 
