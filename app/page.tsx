@@ -170,7 +170,7 @@ export default function Home() {
             </div>
           </form>
 
-          <div className="mt-8 pt-6 border-t">
+          <div className="mt-8 pt-6 border-t space-y-6">
             <div className="space-y-3">
               <h3 className="font-semibold text-sm text-muted-foreground">How to use:</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
@@ -187,6 +187,25 @@ export default function Home() {
                   <span>Click &quot;Create Clip&quot; and download your video!</span>
                 </li>
               </ul>
+            </div>
+
+            <div className="p-4 bg-gradient-to-r from-violet-100 to-pink-100 dark:from-violet-900/20 dark:to-pink-900/20 rounded-lg border-2 border-violet-200 dark:border-violet-800">
+              <div className="flex items-center justify-between gap-4">
+                <div className="space-y-1">
+                  <h3 className="font-bold text-violet-900 dark:text-violet-100">
+                    🤖 Try AI Auto-Clip Generator!
+                  </h3>
+                  <p className="text-sm text-violet-700 dark:text-violet-300">
+                    Let AI find and create the best clips automatically
+                  </p>
+                </div>
+                <a
+                  href="/auto-clip"
+                  className="px-4 py-2 bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-700 hover:to-pink-700 text-white font-medium rounded-lg transition-all whitespace-nowrap"
+                >
+                  Try Now →
+                </a>
+              </div>
             </div>
           </div>
         </CardContent>
