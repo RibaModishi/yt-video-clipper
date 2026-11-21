@@ -8,11 +8,19 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**A free, open-source web application for creating clips from YouTube videos.**
+**A free, open-source web application with AI-powered auto-clip generation and social media integration.**
 
-Perfect for content creators who need to extract specific segments from YouTube videos for Instagram, TikTok, or other social media platforms.
+Perfect for content creators who need to extract specific segments from YouTube videos for Instagram, TikTok, YouTube Shorts, and other social media platforms.
 
-[🚀 Deploy Now](#-deploy-to-use-from-your-iphone) · [📖 Documentation](#-table-of-contents) · [🐛 Report Bug](https://github.com/RibaModishi/youtube-video-clipper/issues)
+## 🆕 **NEW: AI Auto-Clip Feature!**
+
+- 🤖 **AI Detection**: Automatically finds 3-5 best clips from any video
+- 🎬 **Batch Generation**: Create multiple clips at once
+- 📱 **Social Media**: Post to Instagram, TikTok, YouTube, Twitter, Facebook
+- 🎯 **Smart Analysis**: Scene detection + audio peak analysis
+- 💯 **100% FREE**: No API keys, no subscriptions!
+
+[🤖 Try AI Auto-Clip](/auto-clip) · [🚀 Deploy Now](#-deploy-to-use-from-your-iphone) · [📖 Documentation](#-table-of-contents) · [🐛 Report Bug](https://github.com/RibaModishi/yt-video-clipper/issues)
 
 </div>
 
@@ -21,6 +29,7 @@ Perfect for content creators who need to extract specific segments from YouTube 
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [AI Auto-Clip Features](#-ai-auto-clip-features-new)
 - [Tech Stack](#-tech-stack--programming-languages)
 - [Architecture](#-architecture)
 - [How It Works](#-how-it-works)
@@ -46,6 +55,142 @@ YouTube Video Clipper is a web-based application that allows you to extract spec
 - ✅ **Privacy First** - Videos are processed on the server, never stored
 - ✅ **Open Source** - Full transparency, customize as needed
 - ✅ **Mobile Friendly** - Works on any device, including iPhone and Android
+
+---
+
+## 🤖 AI Auto-Clip Features (NEW!)
+
+### **What's New?**
+
+Your video clipper now has **AI-powered automatic clip generation** - just like ssemble.ai, but completely FREE!
+
+### **🎯 Key Features:**
+
+#### **1. AI Clip Detection**
+- Automatically analyzes videos and finds 3-5 best clips
+- Uses scene change detection + audio analysis
+- Scores each clip for engagement potential (70-100%)
+- Suggests optimal durations: 15s, 30s, 45s, 60s, 90s
+
+#### **2. Batch Generation**
+- Create multiple clips simultaneously
+- Select which AI suggestions to generate
+- Download all clips at once
+- Faster than manual clipping
+
+#### **3. Social Media Integration**
+- 📸 Instagram Reels (up to 90s)
+- 🎵 TikTok (up to 60s)
+- ▶️ YouTube Shorts (up to 60s)
+- 🐦 Twitter/X (up to 140s)
+- 👥 Facebook (up to 240s)
+
+#### **4. Smart Posting**
+- Platform-specific recommendations
+- Caption management
+- Multi-platform selection
+- Step-by-step posting guides
+
+### **🚀 Quick Start with AI:**
+
+```
+1. Visit /auto-clip page
+2. Paste YouTube URL
+3. Click "Analyze & Find Best Clips"
+4. Review 3-5 AI suggestions
+5. Select clips to generate
+6. Download all clips
+7. Post to social media
+```
+
+### **💡 How AI Works:**
+
+```mermaid
+graph LR
+    A[YouTube URL] --> B[Download Video]
+    B --> C[Scene Detection]
+    B --> D[Audio Analysis]
+    C --> E[Find Key Moments]
+    D --> E
+    E --> F[Score Clips 70-100%]
+    F --> G[Suggest Top 3-5 Clips]
+    G --> H[User Selects]
+    H --> I[Batch Generate]
+    I --> J[Download & Post]
+```
+
+### **📊 AI Detection Methods:**
+
+| Method | What It Detects | Use Case |
+|--------|----------------|----------|
+| **Scene Change** | Visual transitions, camera cuts | Engaging moments |
+| **Audio Peaks** | Volume spikes, music changes | Exciting content |
+| **Strategic Position** | Intro, middle, outro | Story structure |
+| **Duration Match** | Platform-specific lengths | Optimal posting |
+
+### **🎬 Clip Suggestions Example:**
+
+```typescript
+{
+  "clip_1": {
+    "duration": "30s",
+    "score": "95%",
+    "reason": "High-energy scene change at 1:23",
+    "perfect_for": "TikTok, Instagram Reels"
+  },
+  "clip_2": {
+    "duration": "60s",
+    "score": "88%",
+    "reason": "Core content - main topic discussion",
+    "perfect_for": "YouTube Shorts, Instagram"
+  },
+  "clip_3": {
+    "duration": "15s",
+    "score": "85%",
+    "reason": "Opening hook - captures attention",
+    "perfect_for": "TikTok viral content"
+  }
+}
+```
+
+### **✨ Comparison to Paid Tools:**
+
+| Feature | This App | ssemble.ai | Opus Clip | Vizard |
+|---------|----------|-----------|-----------|--------|
+| Auto-Clip | ✅ FREE | $20-50/mo | $30-100/mo | $30-75/mo |
+| Social Media | ✅ FREE | ✅ | ✅ | ✅ |
+| Batch Generate | ✅ FREE | ✅ | ✅ | ✅ |
+| No Watermark | ✅ | ❌ (paid only) | ❌ | ❌ |
+| API Keys | ❌ Not needed | ✅ Required | ✅ Required | ✅ Required |
+| Open Source | ✅ | ❌ | ❌ | ❌ |
+
+### **📱 Complete Workflow:**
+
+1. **Auto-Generate** (2 min)
+   - AI finds best clips
+   - Review suggestions
+   - Generate selected clips
+
+2. **Download** (30 sec)
+   - Get all clips at once
+   - Optimized quality
+
+3. **Post Everywhere** (2 min)
+   - Select platforms
+   - Add caption
+   - Follow guides
+   - Post!
+
+**Total time: ~5 minutes from YouTube URL to posted on all platforms!**
+
+### **📚 Full AI Documentation:**
+
+See [AI_FEATURES.md](./AI_FEATURES.md) for complete guide including:
+- Detailed AI detection explanation
+- Platform-specific strategies
+- Pro tips for viral content
+- Troubleshooting guide
+- Example workflows
 
 ---
 
